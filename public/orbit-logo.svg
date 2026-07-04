@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Catppuccin Background -->
+  <rect width="500" height="500" rx="120" fill="#11111b" />
+  
+  <g transform="translate(250, 250)">
+    <!-- Sleek, subtle 3D Orbit Ring Background -->
+    <g transform="rotate(-20)">
+        <ellipse cx="0" cy="0" rx="180" ry="70" fill="none" stroke="#45475a" stroke-width="4" stroke-dasharray="12 10" />
+        <circle cx="-180" cy="0" r="6" fill="#f9e2af" opacity="0.5" />
+    </g>
+
+    <!-- Core Element (MAXIMUM SIZE for perfect visibility at any scale) -->
+    <g transform="scale(5.0) translate(-3, -3)">
+        <!-- Layered Windows -->
+        <rect x="-26" y="-12" width="34" height="26" rx="2" fill="#313244" stroke="#cba6f7" stroke-width="1.5" transform="skewX(-25)" />
+        <rect x="-8" y="-4" width="34" height="26" rx="2" fill="#45475a" stroke="#89b4fa" stroke-width="1.5" transform="skewX(-25)" />
+        <rect x="10" y="4" width="34" height="26" rx="2" fill="#f38ba8" stroke="#f38ba8" stroke-width="1.5" transform="skewX(-25)" />
+        <circle cx="-12" cy="-20" r="3.5" fill="#a6e3a1" />
+    </g>
+  </g>
+</svg>
