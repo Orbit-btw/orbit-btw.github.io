@@ -1,41 +1,21 @@
 "use client";
 
 import {
-  Battery,
   Bell,
   Blocks,
-  Bluetooth,
-  Calculator,
-  Calendar,
-  Camera,
-  CheckSquare,
-  Clipboard,
   Code,
-  Cloud,
-  Eye,
-  HardDrive,
   Image as ImageIcon,
   Keyboard,
   LayoutGrid,
   Menu,
-  MonitorSpeaker,
-  Moon,
   Palette,
   PanelBottom,
   PanelTop,
-  Pipette,
   Rocket,
   Search,
-  Shield,
   Sparkles,
-  Sun,
-  Terminal,
   Type,
-  Unlock,
   UserCircle,
-  Volume2,
-  Wifi,
-  ZoomIn,
 } from "lucide-react";
 
 import { useEffect, useRef } from "react";
@@ -388,29 +368,6 @@ export default function Home() {
                     marginBottom: "0.25rem",
                   }}
                 >
-                  <MonitorSpeaker size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitOSD
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: Avizo / Wob</span>
-                <p>
-                  Replace the massive, uncustomizable Windows volume and
-                  brightness overlays with a sleek, minimal, and highly themable
-                  on-screen display (OSD) daemon that matches your setup.
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
                   <Menu size={20} style={{ color: "#888" }} />
                   <h3 className="project-title" style={{ marginBottom: 0 }}>
                     OrbitMenu
@@ -480,28 +437,6 @@ export default function Home() {
                     marginBottom: "0.25rem",
                   }}
                 >
-                  <Moon size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitIdle
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: Swayidle</span>
-                <p>
-                  A custom idle management daemon. Hook into user activity to
-                  trigger custom scripts, dim the screen, or launch{" "}
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
                   <Sparkles size={20} style={{ color: "#888" }} />
                   <h3 className="project-title" style={{ marginBottom: 0 }}>
                     OrbitFx
@@ -513,52 +448,6 @@ export default function Home() {
                   corners, dual-kawase blur, and custom drop shadows onto legacy
                   Win32 apps that don&apos;t natively support modern WinUI
                   effects.
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Shield size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitAuth
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: lxqt-policykit</span>
-                <p>
-                  Intercept Windows UAC elevation requests via a custom
-                  credential provider. Replace the jarring, screen-dimming UAC
-                  popup with a minimal, themeable password prompt.
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Clipboard size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitClipboard
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: Cliphist</span>
-                <p>
-                  A lightweight, purely background clipboard daemon. Bypass the
-                  slow Windows Win+V UI completely by passing clipboard history
-                  directly to{" "}
                 </p>
               </div>
             </div>
@@ -597,79 +486,6 @@ export default function Home() {
                     marginBottom: "0.25rem",
                   }}
                 >
-                  <Keyboard size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitKeymap
-                  </h3>
-                </div>
-                <span className="project-tag">
-                  Inspired by: kmonad / xmodmap
-                </span>
-                <p>
-                  A pure, low-level keyboard hook daemon written in Rust. Remap
-                  keys at the system level (like Caps Lock to Escape/Ctrl)
-                  without the heavy syntax and bloat of AutoHotkey.
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Terminal size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitDrop
-                  </h3>
-                </div>
-                <span className="project-tag">
-                  Inspired by: tdrop / yakuake
-                </span>
-                <p>
-                  A specialized daemon whose only job is to manage a persistent,
-                  drop-down scratchpad terminal. Hit a hotkey and it slides down
-                  instantly over any layout.
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Volume2 size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitAudio
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: pavucontrol</span>
-                <p>
-                  A lightweight CLI and minimal GUI specifically for routing
-                  audio streams and changing default audio devices instantly,
-                  freeing you from buried Windows sound settings.
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
                   <Palette size={20} style={{ color: "#888" }} />
                   <h3 className="project-title" style={{ marginBottom: 0 }}>
                     OrbitColor
@@ -679,51 +495,6 @@ export default function Home() {
                 <p>
                   A background color-generation daemon. Automatically extracts a
                   color palette from the current{" "}
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <HardDrive size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitMounter
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: udiskie</span>
-                <p>
-                  A minimal, background daemon to automatically mount/unmount
-                  USB drives and flash drives, showing a clean{" "}
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Sun size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitBacklight
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: brightnessctl</span>
-                <p>
-                  A CLI utility that modifies screen brightness at a hardware
-                  level without invoking the clunky Windows action center. Bind
-                  it directly to{" "}
                 </p>
               </div>
             </div>
@@ -770,273 +541,6 @@ export default function Home() {
                   Windows Search indexing is notoriously slow and CPU-heavy. A
                   lightning-fast indexing daemon that bypasses Windows Search
                   completely and lets you fuzzy-find any file instantly via{" "}
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Camera size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitShot
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: grim / slurp</span>
-                <p>
-                  A purely keyboard-driven, instantaneous screen-capture daemon.
-                  Select a region, copy it to the clipboard, and save it to disk
-                  without ever showing a bulky GUI window.
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Pipette size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitPicker
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: hyprpicker</span>
-                <p>
-                  A lightning-fast, zero-latency color picker utility. Trigger
-                  it via hotkey, click anywhere on the screen, and the hex code
-                  is instantly sent to{" "}
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Unlock size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitSudo
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: gsudo</span>
-                <p>A native CLI tool that integrates directly with </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Wifi size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitNetwork
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: nmtui</span>
-                <p>
-                  A CLI interface or minimal floating UI to connect to WiFi
-                  networks and manage adapters directly, bypassing the slow,
-                  bulky Windows 11 network flyout entirely.
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Bluetooth size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitBluetooth
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: blueman</span>
-                <p>
-                  A lightweight manager to pair, connect, and disconnect
-                  Bluetooth devices instantly from{" "}
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Battery size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitPower
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: auto-cpufreq</span>
-                <p>
-                  A background daemon to automatically swap Windows power plans
-                  based on whether you are plugged in, or dynamically based on
-                  which application is currently focused in{" "}
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <ZoomIn size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitMagnify
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: xzoom</span>
-                <p>
-                  A highly optimized screen magnifier that runs purely on GPU
-                  shaders. Magnify portions of your screen instantly via hotkey
-                  without the sluggishness of the default Windows Magnifier.
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Calendar size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitCalendar
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: calcurse</span>
-                <p>
-                  A minimal, scriptable floating calendar daemon that appears
-                  when you click the clock module on{" "}
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <CheckSquare size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitTasks
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: taskwarrior</span>
-                <p>A command-line based task manager integrated into the </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Eye size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitFocus
-                  </h3>
-                </div>
-                <span className="project-tag">
-                  Inspired by: inactive-opacity
-                </span>
-                <p>
-                  A daemon that visually dims unfocused windows automatically to
-                  draw your attention to the active tile, without requiring a
-                  heavy compositor stack.
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Calculator size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitCalc
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: bc / qalc</span>
-                <p>
-                  A drop-down, instantly available calculator utility to replace
-                  the heavy, bloated UWP Windows Calculator app. Bind it to a
-                  hotkey for immediate math.
-                </p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="card-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  <Cloud size={20} style={{ color: "#888" }} />
-                  <h3 className="project-title" style={{ marginBottom: 0 }}>
-                    OrbitWeather
-                  </h3>
-                </div>
-                <span className="project-tag">Inspired by: wttr.in</span>
-                <p>
-                  A minimal script and daemon to fetch weather data directly
-                  to{" "}
                 </p>
               </div>
             </div>
